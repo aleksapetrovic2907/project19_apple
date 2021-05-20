@@ -29,25 +29,44 @@ nav a {
     color: white;
     text-decoration: none;
     border: none;
+    line-height: 34px;
+}
+
+nav>* {
+    flex: 1;
+    padding: 2px 0;
+    border-right: 1px solid #5a5a5a;
+    text-align: center;
+    background-image: linear-gradient(to left, #e8e8e82e 0% 1%, #0000 1% 99%, #e8e8e82e 99% 100%), radial-gradient(circle, #0000 92%, #98989826 100%);
+}
+
+nav>*:not(form):hover {
+    backdrop-filter: brightness(75%);
+}
+
+nav>*:last-child {
+    border-right: none;
 }
 
 nav input {
     float: right;
     font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
-    background: transparent;
-    border-radius: 25px;
-    border: 2px solid #666;
+    height: 22px;
+    width: 108px;
+    margin: 4px 11px;
+    padding-left: 20px;
+    padding-right: 10px;
+    border-radius: 12px;
+    border: 1px solid rgb(88, 88, 88);
+    background-color: transparent;
+    transition: 0.3s;
     color: white;
-    outline: none;
-    padding: 0px 10px;
-    width: 60%;
-    transition: .3s ease-in-out;
 }
 
 nav input:focus {
-    background: white;
+    outline: none;
+    background-color: white;
     color: black;
-    width: 100%;
 }
 
 #apple-logo {
@@ -56,6 +75,18 @@ nav input:focus {
     height: 30px;
     margin: 3px auto;
     background: url(http://images.apple.com/global/nav/images/globalnav_text.png) no-repeat 50% 0;
+}
+
+.fa-search {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGJhc2VQcm9maWxlPSJmdWxsIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWxuczpldj0iaHR0cDovL3d3dy53My5vcmcvMjAwMS94bWwtZXZlbnRzIj4KPGc%2BCgk8cG9seWdvbiBmaWxsPSIjNjY2IiBwb2ludHM9IjkuMjA3LDYuMTI2IDcuNzkzLDcuNTQxIDExLjc5MywxMS41NDEgMTMuMjA3LDEwLjEyNiIgLz4KCTxwYXRoIGZpbGw9IiM2NjYiIGQ9Ik01LjkxNywyYzEuNjA4LDAsMi45MTcsMS4zMDgsMi45MTcsMi45MTdTNy41MjUsNy44MzMsNS45MTcsNy44MzNTMyw2LjUyNSwzLDQuOTE3UzQuMzA4LDIsNS45MTcsMgoJCSBNNS45MTcsMEMzLjIwMSwwLDEsMi4yMDEsMSw0LjkxN3MyLjIwMSw0LjkxNyw0LjkxNyw0LjkxN3M0LjkxNy0yLjIwMSw0LjkxNy00LjkxN0MxMC44MzMsMi4yMDEsOC42MzIsMCw1LjkxNywwTDUuOTE3LDB6IiAvPgo8L2c%2BCjwvc3ZnPgo%3D');
+    display: block;
+    position: relative;
+    width: 15px;
+    height: 14px;
+    top: 9px;
+    left: 16px;
+    font-size: 12px;
+    filter: brightness(1000%);
 }
 
 .banner {
